@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mrp",
+  "name": "MRP",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["MK_16"],
+  "credits": "Server",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

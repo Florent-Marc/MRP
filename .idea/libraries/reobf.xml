@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="reobf">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf8377783467573507543.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf7675424491120130882.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf6352128129354059686.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf872674271341028147.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf5532066484931627298.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf4569507210790083633.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toInject8090012393428930415.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf815911079930712183.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf6407317332046304795.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf7279481897220027079.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf8094169995189024800.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf3989184446017261590.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf4002042512987001168.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf2771963895059181017.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf1956468646064261851.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf2296737722157945898.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf6370732472867923065.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf1006469657636808064.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf4310845397708533656.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/tmp/reobf/toObf2747736147808085330.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

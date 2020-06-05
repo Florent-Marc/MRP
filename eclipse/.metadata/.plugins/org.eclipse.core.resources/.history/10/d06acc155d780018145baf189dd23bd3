@@ -1,0 +1,37 @@
+package com.mod.mrp.init;
+
+import com.mod.mrp.Moda;
+import com.mod.mrp.Reference;
+import com.mod.mrp.block.BlockBasic;
+import com.mod.mrp.blocks.BlockCropsMod;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockCrops;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
+
+public class BlockMod
+{
+    public static Block block_on,block_uraniumb,block_1;
+    public static Block plantecana,pp;
+    
+    public static void init()
+    {
+        block_on = new BlockBasic(Material.rock).setBlockName("serveron").setCreativeTab(Moda.Tabs).setBlockTextureName(Reference.MOD_ID + ":serveron");
+        block_1 = new BlockBasic(Material.rock).setBlockName("1").setCreativeTab(Moda.Tabs).setBlockTextureName(Reference.MOD_ID + ":testbbb");
+        block_uraniumb = new BlockBasic(Material.rock).setBlockName("uranium").setCreativeTab(Moda.Tabs).setBlockTextureName(Reference.MOD_ID + ":uraniumb").setHardness(10);
+        plantecana = new BlockCropsMod().setBlockName("plantecana").setCreativeTab(Moda.Tabs).setBlockTextureName(Reference.MOD_ID + ":plantecana");
+        pp = new BlockCropsMod().setBlockName("pp").setCreativeTab(Moda.Tabs).setBlockTextureName(Reference.MOD_ID + ":pp");
+    }
+    
+    public static void register()
+    {
+
+        GameRegistry.registerBlock(block_on, block_on.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(block_1, block_1.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(block_uraniumb, block_uraniumb.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(plantecana, plantecana.getUnlocalizedName().substring(5));
+        GameRegistry.registerBlock(pp, pp.getUnlocalizedName().substring(5));
+    }
+}

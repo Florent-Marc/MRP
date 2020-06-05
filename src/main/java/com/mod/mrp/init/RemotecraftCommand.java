@@ -1,0 +1,35 @@
+package com.mod.mrp.init;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.command.CommandBase;
+import net.minecraft.command.CommandException;
+import net.minecraft.command.ICommandSender;
+import net.minecraft.server.MinecraftServer;
+
+public class RemotecraftCommand extends CommandBase {
+
+    private final String COMMAND_NAME = "remotecraft";
+    private final String COMMAND_HELP = "Help for Remotecraft";
+
+    @Override
+    public String getCommandName() {
+        return COMMAND_NAME;
+    }
+
+    @Override
+    public String getCommandUsage(ICommandSender sender) {
+        return COMMAND_HELP;
+    }
+
+    public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {
+        Minecraft.getMinecraft().displayGuiScreen(new GuiScreen());
+    }
+
+    @Override
+    public void processCommand(ICommandSender p_71515_1_, String[] p_71515_2_)
+    {
+        // TODO Auto-generated method stub
+        
+    }
+}

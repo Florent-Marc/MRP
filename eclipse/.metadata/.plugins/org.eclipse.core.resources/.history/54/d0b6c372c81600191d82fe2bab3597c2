@@ -1,0 +1,147 @@
+package com.mod.mrp.init;
+
+import com.mod.mrp.Moda;
+import com.mod.mrp.Reference;
+import com.mod.mrp.items.ItemFoodMod;
+import com.sun.org.apache.xpath.internal.operations.Mod;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.world.World;
+import net.minecraft.item.ItemSword;
+import net.minecraftforge.common.util.EnumHelper;
+public class ItemMod
+{
+    
+    
+    public static Item item_carte1,item_carte2,item_bidon,item_pp,item_cv,item_test,item_test2,item_radio,item_metal,item_cle,item_clevoiture,item_plutonium,item_cvp,item_ingotura,item_badgemp,item_badgeg,item_cc,item_sv,item_planche,item_pierre,cana,canaseed,bdga,medic,armeair,buche,petrol,boiteo,boitef,cigar,joint,tabac,tel,chr,chv,frite,povidone,balle,icone;
+    public static Item bt;
+    public static Item btp;
+    public static Item bb;
+    public static Item pc;
+    public static Item mt;
+    public static Item jeton;
+    public static Item cr;
+    public static Item mercure;
+    public static Item dia;
+    public static Item nt;
+    public static Item metalb;
+
+    
+    public static void init ()
+    {
+        item_carte1 = new Item().setUnlocalizedName("carte1").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":carte1");
+        item_carte2 = new Item().setUnlocalizedName("carte2").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":carte2");
+        item_bidon = new Item().setUnlocalizedName("bidon").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":bidon").setMaxStackSize(1);
+        item_pp = new Item().setUnlocalizedName("pp").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":pp");
+        item_cv = new Item().setUnlocalizedName("cv").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":cv");
+        item_test = new Item().setUnlocalizedName("pochedesang").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":test1");
+        item_test2 = new Item().setUnlocalizedName("pochedesang2").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":test2");
+        item_radio = new Item().setUnlocalizedName("radio").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":radio").setMaxStackSize(1);
+        item_metal = new Item().setUnlocalizedName("metal").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":metal");
+        cr = new Item().setUnlocalizedName("cr").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":radio");
+        item_cle = new Item().setUnlocalizedName("cle").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":cle");
+        item_clevoiture = new Item().setUnlocalizedName("clevoiture").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":clevoiture");
+        item_plutonium = new Item().setUnlocalizedName("plutonium").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":plutonium").setMaxStackSize(3);
+        item_cvp = new ItemFoodMod(3, 0, false).setUnlocalizedName("cvp").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":cvp");
+        item_ingotura = new Item().setUnlocalizedName("ingotura").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":ingotura").setMaxStackSize(3);
+        item_badgemp = new Item().setUnlocalizedName("badgemp").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":mp").setMaxStackSize(1);
+        item_badgeg = new Item().setUnlocalizedName("badgeg").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":badgeg").setMaxStackSize(1);
+        item_cc = new Item().setUnlocalizedName("cc").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":cc").setMaxStackSize(5);
+        item_sv = new Item().setUnlocalizedName("sv").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":seringuev").setMaxStackSize(2);
+        item_planche = new Item().setUnlocalizedName("planche").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":planche").setMaxStackSize(4);
+        item_pierre = new Item().setUnlocalizedName("pierre").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":pierre").setMaxStackSize(4);
+        cana = new Item().setUnlocalizedName("cana").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":cana").setMaxStackSize(1);
+        bdga = new Item().setUnlocalizedName("bdga").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":armedeterre").setMaxStackSize(1);
+        medic = new Item().setUnlocalizedName("medic").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":medic").setMaxStackSize(1);
+        armeair = new Item().setUnlocalizedName("armeair").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":armeair").setMaxStackSize(1);
+        buche = new Item().setUnlocalizedName("buche").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":buche").setMaxStackSize(2);
+        petrol = new Item().setUnlocalizedName("petrol").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":petrol").setMaxStackSize(5);
+        boiteo = new Item().setUnlocalizedName("boiteo").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":boiteo").setMaxStackSize(1);
+        boitef = new Item().setUnlocalizedName("boitef").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":boitef").setMaxStackSize(1);
+        cigar = new Item().setUnlocalizedName("cigar").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":cigarrette").setMaxStackSize(1);
+        joint = new Item().setUnlocalizedName("joint").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":joint").setMaxStackSize(3);
+        tabac = new Item().setUnlocalizedName("tabac").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":tabac").setMaxStackSize(5);
+        tel = new Item().setUnlocalizedName("tel").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":tel").setMaxStackSize(1);
+        chr = new Item().setUnlocalizedName("chr").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":chr").setMaxStackSize(3);
+        chv = new Item().setUnlocalizedName("chv").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":chv").setMaxStackSize(3);
+        frite = new ItemFoodMod(4,0, false).setUnlocalizedName("frite").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":frite").setMaxStackSize(1);
+        balle = new Item().setUnlocalizedName("balle").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":balle").setMaxStackSize(10);
+        icone = new Item().setUnlocalizedName("icone").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":icone").setMaxStackSize(1);
+        bt = new Item().setUnlocalizedName("bt").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":bt").setMaxStackSize(16);
+        btp  = new Item().setUnlocalizedName("btp").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":btp").setMaxStackSize(8);
+        bb  = new Item().setUnlocalizedName("bb").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":bb").setMaxStackSize(1);
+        pc = new Item().setUnlocalizedName("pc").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":pc").setMaxStackSize(5);
+        mt = new Item().setUnlocalizedName("mt").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":mt").setMaxStackSize(1);
+        jeton = new Item().setUnlocalizedName("jeton").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":jeton").setMaxStackSize(16);
+        mercure = new Item().setUnlocalizedName("mercure").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID + ":mercure").setMaxStackSize(2);
+        povidone = new Item().setUnlocalizedName("povidone").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":povidone").setMaxStackSize(2);
+        dia = new Item().setUnlocalizedName("dia").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":diamant").setMaxStackSize(2);
+        nt = new Item().setUnlocalizedName("nt").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":nt").setMaxStackSize(1);
+        metalb = new Item().setUnlocalizedName("metalb").setCreativeTab(Moda.Tabs).setTextureName(Reference.MOD_ID+":metalb").setMaxStackSize(4);
+    }
+    
+    public static void register()
+    {
+        GameRegistry.registerItem(item_carte1, "carte");
+        GameRegistry.registerItem(item_carte2, "carte2");
+        GameRegistry.registerItem(item_bidon, "bidon");
+        GameRegistry.registerItem(item_cv, "cv");
+        GameRegistry.registerItem(item_pp, "pp");
+        GameRegistry.registerItem(item_test, "pochedesang");
+        GameRegistry.registerItem(item_test2, "pochedesan2");
+        GameRegistry.registerItem(item_radio, "radio");
+        GameRegistry.registerItem(item_metal, "metal");
+        GameRegistry.registerItem(item_cle, "cle");
+        GameRegistry.registerItem(item_clevoiture, "clevoiture");
+        GameRegistry.registerItem(item_plutonium, "plutonium");
+        GameRegistry.registerItem(item_cvp, "cvp");
+        GameRegistry.registerItem(item_ingotura, "ingotura");
+        GameRegistry.registerItem(item_badgemp, "badgemp");
+        GameRegistry.registerItem(item_badgeg, "badgeg");
+        GameRegistry.registerItem(item_cc, "cc");
+        GameRegistry.registerItem(item_sv, "sv");
+        GameRegistry.registerItem(item_planche, "planche");
+        GameRegistry.registerItem(item_pierre, "pierre");
+        GameRegistry.registerItem(cana, "cana");
+        GameRegistry.registerItem(bdga, "bdga");
+        GameRegistry.registerItem(medic, "medic");
+        GameRegistry.registerItem(armeair, "armeair");
+        GameRegistry.registerItem(buche, "buche");
+        GameRegistry.registerItem(petrol, "petrol");
+        GameRegistry.registerItem(boitef, "boitef");
+        GameRegistry.registerItem(boiteo, "boiteo");
+        GameRegistry.registerItem(cigar, "cigar");
+        GameRegistry.registerItem(joint, "joint");
+        GameRegistry.registerItem(tabac, "tabac");
+        GameRegistry.registerItem(tel, "tel");
+        GameRegistry.registerItem(chr, "chr");
+        GameRegistry.registerItem(chv, "chv");
+        GameRegistry.registerItem(frite, "frite");
+        GameRegistry.registerItem(balle, "balle");
+        GameRegistry.registerItem(povidone, "povidone");
+        GameRegistry.registerItem(icone, "icone");
+        GameRegistry.registerItem(bt, "bt");
+        GameRegistry.registerItem(btp, "btp");
+        GameRegistry.registerItem(bb, "bb");
+        GameRegistry.registerItem(pc, "pc");
+        GameRegistry.registerItem(mt, "mt");
+        GameRegistry.registerItem(jeton, "jeton");
+        GameRegistry.registerItem(cr, "cr");
+        GameRegistry.registerItem(mercure, "mercure");
+        GameRegistry.registerItem(dia, "dia");
+        GameRegistry.registerItem(nt, "nt");
+        GameRegistry.registerItem(metalb, "metalb");
+        
+
+    }
+    
+}

@@ -1,0 +1,30 @@
+[19:20:24] [main/INFO]: Setting user: Player855
+[19:20:25] [Client thread/INFO]: LWJGL Version: 2.9.1
+[19:20:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MRP
+[19:20:39] [Sound Library Loader/INFO]: Sound engine started
+[19:20:41] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[19:20:41] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[19:20:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:MRP
+[19:20:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[19:20:44] [Client thread/INFO]: Created: 8192x4096 textures/items-atlas
+[19:20:44] [Sound Library Loader/INFO]: Sound engine started
+[19:20:48] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[19:20:48] [Server thread/INFO]: Generating keypair
+[19:20:49] [Server thread/INFO]: Preparing start region for level 0
+[19:20:51] [Server thread/INFO]: Changing view distance to 12, from 10
+[19:20:51] [Server thread/INFO]: Player855[local:E:3b09ec4d] logged in with entity id 293 at (-221.64572344706372, 68.86512829970259, 273.79505251807484)
+[19:20:51] [Server thread/INFO]: Player855 a rejoint la partie
+[19:20:55] [Server thread/INFO]: Saving and pausing game...
+[19:20:55] [Server thread/INFO]: Saving chunks for level 'dev de Military RP'/Overworld
+[19:20:55] [Server thread/INFO]: Saving chunks for level 'dev de Military RP'/Nether
+[19:20:55] [Server thread/INFO]: Saving chunks for level 'dev de Military RP'/The End
+[19:20:57] [Server thread/INFO]: Player855 vient d'obtenir le succès [Faire l'inventaire]
+[19:20:57] [Client thread/INFO]: [CHAT] Player855 vient d'obtenir le succès [Faire l'inventaire]
+[19:21:13] [Server thread/INFO]: [Player855 : Changement de votre propre mode de jeu en Mode Survie]
+[19:21:13] [Client thread/INFO]: [CHAT] Votre mode de jeu a été mis à jour
+[19:21:43] [Server thread/INFO]: [Player855 : Changement de votre propre mode de jeu en Mode Créatif]
+[19:21:43] [Client thread/INFO]: [CHAT] Votre mode de jeu a été mis à jour
+[19:21:48] [Server thread/INFO]: Saving and pausing game...
+[19:21:48] [Server thread/INFO]: Saving chunks for level 'dev de Military RP'/Overworld
+[19:21:48] [Server thread/INFO]: Saving chunks for level 'dev de Military RP'/Nether
+[19:21:48] [Server thread/INFO]: Saving chunks for level 'dev de Military RP'/The End

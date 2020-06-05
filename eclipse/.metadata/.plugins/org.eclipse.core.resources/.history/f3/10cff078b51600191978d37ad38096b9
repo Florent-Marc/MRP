@@ -1,0 +1,21 @@
+package com.mod.mrp.init;
+public class RemotecraftCommand extends CommandBase {
+
+    private final String COMMAND_NAME = "remotecraft";
+    private final String COMMAND_HELP = "Help for Remotecraft";
+
+    @Override
+    public String getCommandName() {
+        return COMMAND_NAME;
+    }
+
+    @Override
+    public String getCommandUsage(ICommandSender sender) {
+        return COMMAND_HELP;
+    }
+
+    @Override
+    public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException {
+        Minecraft.getMinecraft().displayGuiScreen(new RemotecraftGui());
+    }
+}
